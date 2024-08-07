@@ -1,5 +1,2 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: hsl(0, 0%, 13%);
-  color: hsl(0, 0%, 100%);
-}
+// Al especificar una carpeta automaticamente buscara el archivo con nombre index
+@forward 'globals';
