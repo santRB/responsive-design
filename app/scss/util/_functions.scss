@@ -1,0 +1,7 @@
+@use 'sass:math';
+
+// font-size: rem(30);
+@function rem($pixel) {
+  // dividir pixel entre 16 para convertir a rems
+  @return math.div($pixel, 16) + rem;
+}
