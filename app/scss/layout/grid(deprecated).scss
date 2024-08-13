@@ -1,0 +1,106 @@
+// @use '../util' as u;
+
+// // Sass placeholder, para usarlo debes utilizar @extend
+// // %widget {
+// //   padding: u.rem(16);
+// // }
+
+// .grid {
+//   display: grid;
+//   grid-template-columns: 1fr;
+//   grid-template-rows: auto auto;
+//   gap: u.rem(40);
+//   // max-width: 1000px;
+//   width: min(
+//     100% - u.rem(40),
+//     u.rem(1000)
+//   ); // en mobile agrega padding de 20 izq der
+//   margin-inline: auto; // margen a la izquierda y derecha solamente
+
+//   @include u.breakpoint(large) {
+//     grid-template-columns: 2fr 1fr;
+//     grid-template-rows: auto;
+//   }
+
+//   &__main,
+//   &__sidebar {
+//     padding: u.rem(40);
+//   }
+
+//   &__main {
+//     background-color: hsl(240, 100%, 37%);
+
+//     // IMPORTANTE EL ORDEN DE LAS MEDIA QUERYS, para no tener problemas si agregamos varias de min-width lo mejor es ir subiendo el tamaño (medium y luego large), si agregamos con max-width es al reves (de arriba hacia abajo primero medium y luego small)
+//     @include u.breakpoint(medium) {
+//       background-color: hsl(120, 100%, 16%);
+//     }
+
+//     @include u.breakpoint(large) {
+//       background-color: hsl(39, 100%, 35%);
+//     }
+//   }
+
+//   &__sidebar {
+//     @include u.breakpoint-down(medium) {
+//       text-align: center;
+//     }
+
+//     @include u.breakpoint-down(small) {
+//       text-align: right;
+//     }
+//   }
+
+//   &__widget {
+//     padding: u.rem(16);
+
+//     // Modifiers
+//     &.magenta {
+//       //helper or utility class
+//       background-color: hsl(300, 99%, 37%);
+//     }
+
+//     &.green {
+//       background-color: hsl(120, 98%, 19%);
+//     }
+//   }
+// }
+
+// // HTML BORRADO
+// <div class="grid">
+// <main class="grid__main">
+//   <h1>Mythos</h1>
+//   <p>
+//     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium
+//     quos cum blanditiis magni aliquid ratione consequatur minima natus
+//     eius numquam, atque exercitationem facere impedit molestias? Aut sint
+//     at hic iure, accusamus cumque perspiciatis dicta fugiat ab
+//     exercitationem fugit perferendis officia amet molestiae ipsam quaerat
+//     numquam minus reiciendis? Cumque, repudiandae architecto!
+//   </p>
+// </main>
+// <aside class="grid__sidebar">
+//   <div class="grid__widget green">
+//     <h2>More Info</h2>
+//     <p>
+//       Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+//       omnis. Dolor asperiores molestias molestiae sequi eveniet hic, rem,
+//       maxime animi deleniti tempora incidunt nesciunt saepe in amet
+//       tenetur aspernatur aperiam!
+//     </p>
+//   </div>
+//   <div class="grid__widget magenta">
+//     <h2>Check out this cool thing!</h2>
+//     <p>
+//       Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+//       omnis. Dolor asperiores molestias molestiae sequi eveniet hic, rem,
+//     </p>
+//   </div>
+//   <div class="grid__widget magenta">
+//     <h2>More cool stuff is right is here too!</h2>
+//     <p>
+//       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+//       Perferendis vitae adipisci non dignissimos sed nihil hic totam eum.
+//     </p>
+//   </div>
+// </aside>
+// </div>
