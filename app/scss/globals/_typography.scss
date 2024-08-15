@@ -21,6 +21,10 @@ h2 {
   font-size: clamp(u.rem(36), 1.91rem + 1.45vw, u.rem(48));
 }
 
+h3 {
+  font-size: u.rem(24);
+}
+
 p {
   margin-top: 0;
   font-size: u.rem(16);
