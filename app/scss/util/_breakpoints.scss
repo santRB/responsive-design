@@ -1,7 +1,6 @@
 @use 'functions' as f;
 
 // 700px, 900px, 1440px
-// Sass maps, podemos guardar datos en pares (como un objeto de JS)
 $breakpoints-up: (
   'medium': f.em(700),
   'large': f.em(900),
@@ -16,7 +15,6 @@ $breakpoints-down: (
   'large': f.em(1439.98),
 );
 
-// map-get is a function, toma dos parametros: el map y el key (nombre de la variable en el map)
 @mixin breakpoint($size) {
   @media (min-width: map-get($breakpoints-up, $size)) {
     @content;
